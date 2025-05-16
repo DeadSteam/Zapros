@@ -1,0 +1,16 @@
+2025-03-31 00:00:00 - capsola_api - ERROR - Ошибка при получении результата: 502 Server Error: Bad Gateway for url: https://api.capsola.cloud/result
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\capsola.py", line 68, in _get_result
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.capsola.cloud/result
+2025-03-31 00:00:00 - capsola_api - ERROR - Ошибка при создании задачи: 502 Server Error: Bad Gateway for url: https://api.capsola.cloud/create
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\capsola.py", line 48, in _create_task
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.capsola.cloud/create

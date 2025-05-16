@@ -1,0 +1,697 @@
+2025-05-16 20:23:54 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 49, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 49, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 49, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 49, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 49, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 49, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 49, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 49, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 49, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:55 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru сериал содержанки
+2025-05-16 20:23:55 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик с японского на русский
+2025-05-16 20:23:55 - link_collector - INFO - Обработка запроса: site:market.yandex.ru чернильница
+2025-05-16 20:24:05 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик с японского на русский
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:yandex.kz пиратская жизнь нина и вовчик на дзене
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru фильм один плюс один
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:hd.kinopoisk.ru смотреть фильм папе снова 17
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:education.yandex.ru учебник
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:market.yandex.ru сколько стоит айфон 13 про
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:market.yandex.ru чернильница
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru каратель фильм
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru сериал содержанки
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru стриптиз фильм 1996
+2025-05-16 20:24:06 - link_collector - INFO - Обработка запроса: site:yandex.ru погода в иваново
+2025-05-16 20:24:07 - link_collector - INFO - Найдена ссылка: https://yandex.ru/pogoda/ivanovo
+2025-05-16 20:24:07 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик русско казахский
+2025-05-16 20:24:08 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 20:24:08 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик
+2025-05-16 20:24:20 - link_collector - INFO - Найдена ссылка: https://xmlsearch.yandex.kz/video/preview/3741528287236335873?noreask=1
+2025-05-16 20:24:20 - link_collector - INFO - Обработка запроса: site:hd.kinopoisk.ru смотреть онлайн фильм чебурашка
+2025-05-16 20:24:21 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/535341/
+2025-05-16 20:24:21 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru фильм лес
+2025-05-16 20:24:21 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/17661/
+2025-05-16 20:24:21 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru полтора шпиона фильм
+2025-05-16 20:24:21 - link_collector - INFO - Найдена ссылка: https://education.yandex.ru/uchebnik/main/
+2025-05-16 20:24:21 - link_collector - INFO - Обработка запроса: site:market.yandex.ru кондиционер купить
+2025-05-16 20:24:21 - link_collector - INFO - Найдена ссылка: https://hd.kinopoisk.ru/film/4640262863894993ac91790acda5d78f
+2025-05-16 20:24:21 - link_collector - INFO - Обработка запроса: site:market.yandex.ru дарсонваль для лица
+2025-05-16 20:24:23 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1041718/
+2025-05-16 20:24:23 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru зеррин текиндор
+2025-05-16 20:24:23 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/472105/
+2025-05-16 20:24:23 - link_collector - INFO - Обработка запроса: site:auto.ru lx 570 lexus
+2025-05-16 20:24:23 - link_collector - INFO - Найдена ссылка: https://hd.kinopoisk.ru/film/7c593f8b496542d7a4533e3445556ecd
+2025-05-16 20:24:23 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru дарья мороз фильмы
+2025-05-16 20:24:23 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%AF%D0%BF%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 20:24:23 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru конец света сериал 2022
+2025-05-16 20:24:23 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/name/976893/
+2025-05-16 20:24:23 - link_collector - INFO - Обработка запроса: site:market.yandex.ru дженга
+2025-05-16 20:24:24 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/name/245617/
+2025-05-16 20:24:24 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru обратная сторона луны сериал
+2025-05-16 20:24:24 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/4642803/
+2025-05-16 20:24:24 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru конец света сериал 2022
+2025-05-16 20:24:24 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 20:24:24 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня
+2025-05-16 20:24:24 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 20:24:24 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик русско казахский
+2025-05-16 20:24:24 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/622652/
+2025-05-16 20:24:24 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru смотреть онлайн фильм чебурашка
+2025-05-16 20:24:24 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/4642803/
+2025-05-16 20:24:24 - link_collector - INFO - Обработка запроса: site:yandex.ru джоди фостер
+2025-05-16 20:24:25 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/?grid=all
+2025-05-16 20:24:25 - link_collector - INFO - Обработка запроса: site:yandex.ru программа передач на сегодня
+2025-05-16 20:24:25 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 20:24:25 - link_collector - INFO - Обработка запроса: site:yandex.ru мэрилин мэнсон
+2025-05-16 20:24:25 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/?grid=all
+2025-05-16 20:24:25 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс
+2025-05-16 20:24:33 - link_collector - INFO - Найдена ссылка: https://market.yandex.ru/category/konditsionery
+2025-05-16 20:24:33 - link_collector - INFO - Обработка запроса: site:market.yandex.ru купить кондиционер
+2025-05-16 20:24:33 - link_collector - INFO - Найдена ссылка: https://market.yandex.ru/catalog--mobilnye-telefony/34512430/list?glfilter=12782797%3A25786910&glfilter=7893318%3A153043
+2025-05-16 20:24:33 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru чужой район сериал
+2025-05-16 20:24:34 - link_collector - INFO - Найдена ссылка: https://market.yandex.ru/search?text=%D0%B4%D0%B0%D1%80%D1%81%D0%BE%D0%BD%D0%B2%D0%B0%D0%BB%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%20%D0%B8%20%D0%BB%D0%B8%D1%86%D0%B0
+2025-05-16 20:24:34 - link_collector - INFO - Обработка запроса: site:market.yandex.ru семя льна
+2025-05-16 20:24:34 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/627273/
+2025-05-16 20:24:34 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru пятница 13 е фильм 1980
+2025-05-16 20:24:34 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/23922/
+2025-05-16 20:24:34 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru телепрограмма передач на сегодня
+2025-05-16 20:24:35 - link_collector - INFO - Найдена ссылка: https://market.yandex.ru/search?text=%D0%B4%D0%B6%D0%B5%D0%BD%D0%B3%D0%B0
+2025-05-16 20:24:35 - link_collector - INFO - Обработка запроса: site:market.yandex.ru купить сони плейстейшен 5
+2025-05-16 20:24:36 - link_collector - INFO - Найдена ссылка: https://ya.ru/
+2025-05-16 20:24:36 - link_collector - INFO - Обработка запроса: site:yandex.eu яндекс
+2025-05-16 20:24:36 - link_collector - INFO - Найдена ссылка: https://yandex.eu/
+2025-05-16 20:24:36 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 20:35:34 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 20:35:35 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 20:35:35 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик
+2025-05-16 20:37:19 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 20:37:21 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:21 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:21 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:21 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:21 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:21 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:21 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:21 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:22 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:22 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:22 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:40 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 20:37:42 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:42 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:42 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:42 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:42 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:42 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:42 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:42 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:43 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:43 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:37:43 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:08 - link_collector - INFO - Обработка запроса: site:yandex.ru программа передач на сегодня
+2025-05-16 20:38:08 - link_collector - INFO - Обработка запроса: site:yandex.ru игры яндекс
+2025-05-16 20:38:08 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач
+2025-05-16 20:38:08 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 20:38:08 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс
+2025-05-16 20:38:08 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня
+2025-05-16 20:38:08 - link_collector - INFO - Обработка запроса: site:yandex.eu яндекс
+2025-05-16 20:38:08 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик
+2025-05-16 20:38:08 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 20:38:08 - link_collector - INFO - Обработка запроса: site:yandex.ru яндекс игры
+2025-05-16 20:38:22 - link_collector - INFO - Найдена ссылка: https://ya.ru/
+2025-05-16 20:38:22 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/
+2025-05-16 20:38:22 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 20:38:22 - link_collector - INFO - Найдена ссылка: https://yandex.eu/
+2025-05-16 20:38:22 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/
+2025-05-16 20:38:22 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 20:38:22 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/
+2025-05-16 20:38:22 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 20:38:24 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:24 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:24 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:24 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:24 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:24 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:24 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:24 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:24 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 20:38:25 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 20:38:26 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:27 - link_collector - INFO - Драйвер закрыт
+2025-05-16 20:38:27 - link_collector - INFO - Обработка файла завершена
+2025-05-16 22:14:22 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:14:23 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 22:14:23 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик
+2025-05-16 22:14:24 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 22:14:24 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня
+2025-05-16 22:14:25 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:25 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:25 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:25 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:25 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:25 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:25 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:25 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:25 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:26 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:26 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:14:40 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/?grid=main&period=all-day
+2025-05-16 22:14:40 - link_collector - INFO - Обработка запроса: site:yandex.ru программа передач на сегодня
+2025-05-16 22:14:40 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/
+2025-05-16 22:14:40 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс
+2025-05-16 22:14:41 - link_collector - INFO - Найдена ссылка: https://ya.ru/
+2025-05-16 22:14:41 - link_collector - INFO - Обработка запроса: site:yandex.eu яндекс
+2025-05-16 22:14:56 - link_collector - INFO - Найдена ссылка: https://yandex.eu/
+2025-05-16 22:14:56 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 22:14:57 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 22:14:57 - link_collector - INFO - Обработка запроса: site:yandex.ru игры яндекс
+2025-05-16 22:14:57 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 22:14:57 - link_collector - INFO - Обработка запроса: site:yandex.ru яндекс игры
+2025-05-16 22:15:12 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 22:15:12 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач
+2025-05-16 22:15:13 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/?flag=
+2025-05-16 22:15:15 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:15:15 - link_collector - INFO - Обработка файла завершена
+2025-05-16 22:25:15 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:25:18 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:18 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:18 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:18 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:18 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:18 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:18 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:18 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:18 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:19 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:19 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:19 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:19 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:19 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:32 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:34 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:35 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:35 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:35 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:55 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:25:57 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:57 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:57 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:57 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:57 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:57 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:57 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:25:57 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:26:06 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:26:31 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:26:31 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 22:26:31 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня
+2025-05-16 22:26:31 - link_collector - INFO - Обработка запроса: site:yandex.ru яндекс игры
+2025-05-16 22:26:31 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс
+2025-05-16 22:29:44 - link_collector - INFO - Обработка запроса: site:yandex.ru программа передач на сегодня
+2025-05-16 22:29:44 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс
+2025-05-16 22:29:44 - link_collector - INFO - Обработка запроса: site:yandex.eu яндекс
+2025-05-16 22:29:44 - link_collector - INFO - Обработка запроса: site:yandex.ru яндекс игры
+2025-05-16 22:29:44 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 22:29:44 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:29:44 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик
+2025-05-16 22:29:44 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач
+2025-05-16 22:29:44 - link_collector - INFO - Обработка запроса: site:yandex.ru игры яндекс
+2025-05-16 22:29:44 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня
+2025-05-16 22:31:38 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 22:31:38 - link_collector - INFO - Найдена ссылка: https://ya.ru/
+2025-05-16 22:31:38 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/
+2025-05-16 22:31:38 - link_collector - INFO - Найдена ссылка: https://yandex.eu/
+2025-05-16 22:31:38 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 22:31:38 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 22:31:40 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/
+2025-05-16 22:31:40 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:31:40 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:31:40 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:31:40 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:31:40 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:31:40 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:31:42 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:31:49 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/
+2025-05-16 22:31:51 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:31:53 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 22:31:55 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:32:44 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 22:32:46 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:32:46 - link_collector - INFO - Обработка файла завершена
+2025-05-16 22:35:11 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня
+2025-05-16 22:35:11 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:35:11 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 22:35:11 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс
+2025-05-16 22:35:24 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 22:35:24 - link_collector - INFO - Обработка запроса: site:yandex.ru игры яндекс
+2025-05-16 22:35:25 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 22:35:25 - link_collector - INFO - Обработка запроса: site:yandex.ru яндекс игры
+2025-05-16 22:35:25 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 22:35:25 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач
+2025-05-16 22:35:26 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/
+2025-05-16 22:35:26 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/
+2025-05-16 22:35:26 - link_collector - INFO - Обработка запроса: site:yandex.ru программа передач на сегодня
+2025-05-16 22:35:27 - link_collector - INFO - Найдена ссылка: https://ya.ru/
+2025-05-16 22:35:27 - link_collector - INFO - Обработка запроса: site:yandex.eu яндекс
+2025-05-16 22:35:27 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/
+2025-05-16 22:35:28 - link_collector - INFO - Найдена ссылка: https://yandex.eu/
+2025-05-16 22:35:28 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:35:29 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:35:30 - link_collector - INFO - Драйвер закрыт
+2025-05-16 22:36:36 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс
+2025-05-16 22:36:36 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 22:36:36 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня
+2025-05-16 22:36:36 - link_collector - INFO - Обработка запроса: site:yandex.ru игры яндекс
+2025-05-16 22:36:36 - link_collector - INFO - Обработка запроса: site:yandex.ru программа передач на сегодня
+2025-05-16 22:36:36 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик
+2025-05-16 22:36:36 - link_collector - INFO - Обработка запроса: site:yandex.eu яндекс
+2025-05-16 22:36:36 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:37:13 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 22:37:13 - link_collector - INFO - Обработка запроса: site:yandex.ru программа передач на сегодня
+2025-05-16 22:37:13 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:38:34 - link_collector - INFO - Обработка запроса: site:yandex.eu яндекс
+2025-05-16 22:38:34 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:40:41 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0076A813+48355]
+	(No symbol) [0x006FC4B1]
+	(No symbol) [0x00605358]
+	(No symbol) [0x00621A9E]
+	(No symbol) [0x00620579]
+	(No symbol) [0x00650C55]
+	(No symbol) [0x0065093C]
+	(No symbol) [0x0064A536]
+	(No symbol) [0x006282DC]
+	(No symbol) [0x006293DD]
+	GetHandleVerifier [0x009CAABD+2539405]
+	GetHandleVerifier [0x00A0A78F+2800735]
+	GetHandleVerifier [0x00A0456C+2775612]
+	GetHandleVerifier [0x007F51E0+616112]
+	(No symbol) [0x00705F8C]
+	(No symbol) [0x00702328]
+	(No symbol) [0x0070240B]
+	(No symbol) [0x006F4FF7]
+	BaseThreadInitThunk [0x76A95D49+25]
+	RtlInitializeExceptionChain [0x77D9CEAB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D9CE31+561]
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 48, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0076A813+48355]
+	(No symbol) [0x006FC4B1]
+	(No symbol) [0x00605358]
+	(No symbol) [0x00621A9E]
+	(No symbol) [0x00620579]
+	(No symbol) [0x00650C55]
+	(No symbol) [0x0065093C]
+	(No symbol) [0x0064A536]
+	(No symbol) [0x006282DC]
+	(No symbol) [0x006293DD]
+	GetHandleVerifier [0x009CAABD+2539405]
+	GetHandleVerifier [0x00A0A78F+2800735]
+	GetHandleVerifier [0x00A0456C+2775612]
+	GetHandleVerifier [0x007F51E0+616112]
+	(No symbol) [0x00705F8C]
+	(No symbol) [0x00702328]
+	(No symbol) [0x0070240B]
+	(No symbol) [0x006F4FF7]
+	BaseThreadInitThunk [0x76A95D49+25]
+	RtlInitializeExceptionChain [0x77D9CEAB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D9CE31+561]
+
+2025-05-16 22:40:41 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0076A813+48355]
+	(No symbol) [0x006FC4B1]
+	(No symbol) [0x00605358]
+	(No symbol) [0x00621A9E]
+	(No symbol) [0x00620579]
+	(No symbol) [0x00650C55]
+	(No symbol) [0x0065093C]
+	(No symbol) [0x0064A536]
+	(No symbol) [0x006282DC]
+	(No symbol) [0x006293DD]
+	GetHandleVerifier [0x009CAABD+2539405]
+	GetHandleVerifier [0x00A0A78F+2800735]
+	GetHandleVerifier [0x00A0456C+2775612]
+	GetHandleVerifier [0x007F51E0+616112]
+	(No symbol) [0x00705F8C]
+	(No symbol) [0x00702328]
+	(No symbol) [0x0070240B]
+	(No symbol) [0x006F4FF7]
+	BaseThreadInitThunk [0x76A95D49+25]
+	RtlInitializeExceptionChain [0x77D9CEAB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D9CE31+561]
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 48, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0076A813+48355]
+	(No symbol) [0x006FC4B1]
+	(No symbol) [0x00605358]
+	(No symbol) [0x00621A9E]
+	(No symbol) [0x00620579]
+	(No symbol) [0x00650C55]
+	(No symbol) [0x0065093C]
+	(No symbol) [0x0064A536]
+	(No symbol) [0x006282DC]
+	(No symbol) [0x006293DD]
+	GetHandleVerifier [0x009CAABD+2539405]
+	GetHandleVerifier [0x00A0A78F+2800735]
+	GetHandleVerifier [0x00A0456C+2775612]
+	GetHandleVerifier [0x007F51E0+616112]
+	(No symbol) [0x00705F8C]
+	(No symbol) [0x00702328]
+	(No symbol) [0x0070240B]
+	(No symbol) [0x006F4FF7]
+	BaseThreadInitThunk [0x76A95D49+25]
+	RtlInitializeExceptionChain [0x77D9CEAB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D9CE31+561]
+
+2025-05-16 22:41:36 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:43:17 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 22:43:17 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик
+2025-05-16 22:44:29 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 22:44:29 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 22:44:29 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня
+2025-05-16 22:44:29 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс

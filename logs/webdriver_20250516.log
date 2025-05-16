@@ -1,0 +1,537 @@
+2025-05-16 20:23:54 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:54 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: 'chromedriver.exe' executable may have wrong permissions.
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 55, in __init__
+    self.service.start()
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 109, in start
+    self._start_process(self._path)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\common\service.py", line 243, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+2025-05-16 20:23:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:23:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:23:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:05 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:24:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:35:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:19 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:37:40 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:38:08 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:38:08 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:38:08 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:38:08 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:38:08 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:38:08 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:38:08 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:38:08 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:38:08 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 20:38:08 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:22 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:22 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:22 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:22 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:22 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:22 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:22 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:22 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:22 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:22 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:23 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:14:23 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:15 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:32 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:25:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:26:06 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:26:31 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:26:31 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:26:31 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:26:31 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:26:31 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:29:44 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:29:44 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:29:44 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:29:44 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:29:44 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:29:44 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:29:44 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:29:44 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:29:44 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:29:44 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:35:11 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:35:11 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:35:11 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:35:11 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:36:36 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:36:36 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:36:36 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:36:36 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:36:36 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:36:36 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:36:36 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:36:36 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:37:13 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:37:13 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:37:13 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:38:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:38:34 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:40:41 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0076A813+48355]
+	(No symbol) [0x006FC4B1]
+	(No symbol) [0x00605358]
+	(No symbol) [0x00621A9E]
+	(No symbol) [0x00620579]
+	(No symbol) [0x00650C55]
+	(No symbol) [0x0065093C]
+	(No symbol) [0x0064A536]
+	(No symbol) [0x006282DC]
+	(No symbol) [0x006293DD]
+	GetHandleVerifier [0x009CAABD+2539405]
+	GetHandleVerifier [0x00A0A78F+2800735]
+	GetHandleVerifier [0x00A0456C+2775612]
+	GetHandleVerifier [0x007F51E0+616112]
+	(No symbol) [0x00705F8C]
+	(No symbol) [0x00702328]
+	(No symbol) [0x0070240B]
+	(No symbol) [0x006F4FF7]
+	BaseThreadInitThunk [0x76A95D49+25]
+	RtlInitializeExceptionChain [0x77D9CEAB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D9CE31+561]
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0076A813+48355]
+	(No symbol) [0x006FC4B1]
+	(No symbol) [0x00605358]
+	(No symbol) [0x00621A9E]
+	(No symbol) [0x00620579]
+	(No symbol) [0x00650C55]
+	(No symbol) [0x0065093C]
+	(No symbol) [0x0064A536]
+	(No symbol) [0x006282DC]
+	(No symbol) [0x006293DD]
+	GetHandleVerifier [0x009CAABD+2539405]
+	GetHandleVerifier [0x00A0A78F+2800735]
+	GetHandleVerifier [0x00A0456C+2775612]
+	GetHandleVerifier [0x007F51E0+616112]
+	(No symbol) [0x00705F8C]
+	(No symbol) [0x00702328]
+	(No symbol) [0x0070240B]
+	(No symbol) [0x006F4FF7]
+	BaseThreadInitThunk [0x76A95D49+25]
+	RtlInitializeExceptionChain [0x77D9CEAB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D9CE31+561]
+
+2025-05-16 22:40:41 - webdriver - ERROR - Ошибка при инициализации WebDriver: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0076A813+48355]
+	(No symbol) [0x006FC4B1]
+	(No symbol) [0x00605358]
+	(No symbol) [0x00621A9E]
+	(No symbol) [0x00620579]
+	(No symbol) [0x00650C55]
+	(No symbol) [0x0065093C]
+	(No symbol) [0x0064A536]
+	(No symbol) [0x006282DC]
+	(No symbol) [0x006293DD]
+	GetHandleVerifier [0x009CAABD+2539405]
+	GetHandleVerifier [0x00A0A78F+2800735]
+	GetHandleVerifier [0x00A0456C+2775612]
+	GetHandleVerifier [0x007F51E0+616112]
+	(No symbol) [0x00705F8C]
+	(No symbol) [0x00702328]
+	(No symbol) [0x0070240B]
+	(No symbol) [0x006F4FF7]
+	BaseThreadInitThunk [0x76A95D49+25]
+	RtlInitializeExceptionChain [0x77D9CEAB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D9CE31+561]
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 29, in init_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0076A813+48355]
+	(No symbol) [0x006FC4B1]
+	(No symbol) [0x00605358]
+	(No symbol) [0x00621A9E]
+	(No symbol) [0x00620579]
+	(No symbol) [0x00650C55]
+	(No symbol) [0x0065093C]
+	(No symbol) [0x0064A536]
+	(No symbol) [0x006282DC]
+	(No symbol) [0x006293DD]
+	GetHandleVerifier [0x009CAABD+2539405]
+	GetHandleVerifier [0x00A0A78F+2800735]
+	GetHandleVerifier [0x00A0456C+2775612]
+	GetHandleVerifier [0x007F51E0+616112]
+	(No symbol) [0x00705F8C]
+	(No symbol) [0x00702328]
+	(No symbol) [0x0070240B]
+	(No symbol) [0x006F4FF7]
+	BaseThreadInitThunk [0x76A95D49+25]
+	RtlInitializeExceptionChain [0x77D9CEAB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D9CE31+561]
+
+2025-05-16 22:41:36 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:44:29 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:44:29 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:44:29 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 22:44:29 - webdriver - INFO - WebDriver успешно инициализирован
