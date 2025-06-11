@@ -2,11 +2,11 @@ import time
 import threading
 from typing import List, Tuple
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
+from webdriver_manager.firefox import GeckoDriverManager
 
-from get_link import get_first_yandex_link
+from get_link import get_yandex_links
 from collect_domains import run_collect_domains
 from collect_keywords import run_collect_keywords
 from create_result import run_create_result
@@ -18,15 +18,15 @@ class WebDriverManager:
     """Класс для управления WebDriver."""
     
     @staticmethod
-    def init_driver() -> webdriver.Chrome:
+    def init_driver() -> webdriver.Firefox:
         """Инициализирует WebDriver."""
         try:
             options = Options()
             options.add_argument('--disable-gpu')
             options.add_argument('--no-sandbox')
             # options.add_argument('--headless')
-            service = Service(ChromeDriverManager().install())
-            driver = webdriver.Chrome(service=service, options=options)
+            service = Service(GeckoDriverManager().install())
+            driver = webdriver.Firefox(service=service, options=options)
             webdriver_logger.info("WebDriver успешно инициализирован")
             return driver
         except Exception as e:
@@ -36,8 +36,9 @@ class WebDriverManager:
 class LinkCollector:
     """Класс для сбора ссылок."""
     
-    def __init__(self, num_threads: int):
+    def __init__(self, num_threads: int, max_links_per_query: int = 10):
         self.num_threads = num_threads
+        self.max_links_per_query = max_links_per_query
         self.lock = threading.Lock()
         self.logger = get_logger('link_collector')
 
@@ -55,7 +56,7 @@ class LinkCollector:
 
                     for attempt in range(3):
                         start_time = time.time()
-                        first_link = get_first_yandex_link(driver, search_query, domain)
+                        links = get_yandex_links(driver, search_query, domain, self.max_links_per_query)
 
                         elapsed_time = time.time() - start_time
                         if elapsed_time > 300:
@@ -65,14 +66,15 @@ class LinkCollector:
                             driver = WebDriverManager.init_driver()
                             continue
 
-                        if first_link:
+                        if links:
                             with self.lock:
                                 with open(paths.PARSED_LINKS_FILE, 'a', encoding='utf-8') as res_file:
-                                    res_file.write(first_link + '\n')
-                            self.logger.info(f"Найдена ссылка: {first_link}")
+                                    for link in links:
+                                        res_file.write(link + '\n')
+                            self.logger.info(f"Найдено и сохранено {len(links)} ссылок для {search_query}")
                             break
                         else:
-                            self.logger.warning(f"Попытка {attempt + 1}: Ссылка не найдена для {search_query}")
+                            self.logger.warning(f"Попытка {attempt + 1}: Ссылки не найдены для {search_query}")
         except Exception as e:
             log_exception(self.logger, "Критическая ошибка в рабочем потоке", e)
         finally:
@@ -138,6 +140,7 @@ class Application:
     def __init__(self):
         self.logger = get_logger('application')
         self.num_threads = 0
+        self.max_links_per_query = 10
 
     def run(self) -> None:
         """Запускает приложение."""
@@ -163,15 +166,21 @@ class Application:
         """Запускает режим одного файла."""
         try:
             self.num_threads = int(input("Введите количество потоков: "))
-            #paths.cleanup()  # Очищаем директории
-            #run_collect_domains()  # Собираем домены
-            #run_collect_keywords()  # Собираем ключевые слова
-            collector = LinkCollector(self.num_threads)
+            self.max_links_per_query = int(input("Введите количество ссылок для каждого запроса (макс. 10): "))
+            
+            if self.max_links_per_query <= 0 or self.max_links_per_query > 10:
+                self.max_links_per_query = 10
+                print(f"Установлено значение по умолчанию: {self.max_links_per_query}")
+            
+            paths.cleanup()  # Очищаем директории
+            run_collect_domains()  # Собираем домены
+            run_collect_keywords()  # Собираем ключевые слова
+            collector = LinkCollector(self.num_threads, self.max_links_per_query)
             collector.run()  # Собираем ссылки
             run_create_result()  # Создаем финальный результат
         except ValueError:
-            self.logger.error("Некорректное число потоков")
-            print("Некорректное число потоков. Попробуйте снова.")
+            self.logger.error("Некорректное число потоков или количества ссылок")
+            print("Некорректное число потоков или количества ссылок. Попробуйте снова.")
         except Exception as e:
             log_exception(self.logger, "Ошибка в режиме одного файла", e)
             print(f"Произошла ошибка: {str(e)}")

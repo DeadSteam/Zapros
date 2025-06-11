@@ -1221,3 +1221,1460 @@ Stacktrace:
 	RtlInitializeExceptionChain [0x77D9CEAB+107]
 	RtlGetAppContainerNamedObjectPath [0x77D9CE31+561]
 
+2025-05-16 23:36:37 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:36:37 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:36:39 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:36:39 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:36:39 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:36:39 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:36:39 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:36:39 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:36:39 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:36:39 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:36:40 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:36:40 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:36:40 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:36:40 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:36:40 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:36:40 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:36:40 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:36:40 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:36:40 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:36:41 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:36:41 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:36:44 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:36:44 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:36:44 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:36:44 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:36:45 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:36:45 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:36:45 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:36:45 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:36:45 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:36:45 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:36:45 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:36:45 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:36:46 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:36:46 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:36:55 - get_link - INFO - Капча решена успешно
+2025-05-16 23:36:55 - get_link - INFO - Капча решена успешно
+2025-05-16 23:36:55 - get_link - INFO - Капча решена успешно
+2025-05-16 23:36:55 - get_link - INFO - Капча решена успешно
+2025-05-16 23:36:56 - get_link - INFO - Капча решена успешно
+2025-05-16 23:36:56 - get_link - INFO - Капча решена успешно
+2025-05-16 23:36:56 - get_link - INFO - Капча решена успешно
+2025-05-16 23:37:05 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:37:05 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:37:15 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:37:15 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru первый президент россии (попытка 1)
+2025-05-16 23:37:15 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:37:15 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:market.yandex.ru катушка зажигания (попытка 1)
+2025-05-16 23:37:30 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:37:30 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:37:40 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:37:40 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru первый президент россии (попытка 2)
+2025-05-16 23:37:40 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:37:40 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:market.yandex.ru катушка зажигания (попытка 2)
+2025-05-16 23:37:55 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:37:55 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:38:05 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:38:05 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru первый президент россии (попытка 3)
+2025-05-16 23:38:05 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 253, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:38:05 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:market.yandex.ru катушка зажигания (попытка 3)
+2025-05-16 23:38:58 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:38:58 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:38:58 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:38:58 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:38:58 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:38:58 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:38:58 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:38:59 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:38:59 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:38:59 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:38:59 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:38:59 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:38:59 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:00 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:00 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:00 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:00 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:00 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:00 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:00 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:00 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:00 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:00 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:01 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:01 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:01 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:02 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:02 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:02 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:02 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:02 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:03 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:04 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:04 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:04 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:04 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:04 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:04 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:05 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:05 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:05 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:05 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:05 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:05 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:05 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:05 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:05 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:05 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:05 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:05 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:06 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:06 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:07 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:07 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:07 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:07 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:09 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:09 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:09 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:09 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:14 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:15 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:15 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:17 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:17 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:17 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:17 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:17 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:17 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:19 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:19 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:19 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:20 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:22 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:22 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:23 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:23 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:24 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:25 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:25 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:25 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:25 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:25 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:25 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:25 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:25 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:26 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:26 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:26 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:26 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:27 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:27 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:27 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:39:27 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:27 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:27 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:27 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:27 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:39:27 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:27 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:28 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:29 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:29 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:39:30 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:30 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:30 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:30 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:30 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:30 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:30 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:30 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:31 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:31 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:31 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:31 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:32 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:32 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:32 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:32 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:32 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:32 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:33 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:39:35 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:35 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:36 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:36 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:37 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:39:37 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:39 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:39 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:39 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:39 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:40 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:39:40 - get_link - INFO - Попытка решения капчи #3
+2025-05-16 23:39:40 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:41 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:41 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:41 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:41 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:41 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:42 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:42 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:42 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:43 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:43 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:39:43 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru знак зодиака рак (попытка 1)
+2025-05-16 23:39:44 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:44 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:44 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:44 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:44 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:44 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:44 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:44 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:44 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:44 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:44 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:44 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:45 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:45 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:45 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:45 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:45 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:46 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:46 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:46 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:46 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:46 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:46 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:39:46 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:48 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:48 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:48 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:48 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:39:49 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:49 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:49 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:49 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:49 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:49 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:49 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:49 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:49 - get_link - INFO - Попытка решения капчи #4
+2025-05-16 23:39:49 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:50 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:50 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:50 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:50 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:51 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:51 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:53 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:53 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:53 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:39:53 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:39:55 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:57 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:39:58 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:39:58 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:58 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:58 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:39:58 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:58 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:59 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:59 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:59 - get_link - INFO - Капча решена успешно
+2025-05-16 23:39:59 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:39:59 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:00 - get_link - INFO - Попытка решения капчи #5
+2025-05-16 23:40:00 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:00 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:01 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:02 - get_link - INFO - Капча решена успешно
+2025-05-16 23:40:02 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:03 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:03 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:03 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:03 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:03 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:03 - get_link - INFO - Попытка решения капчи #3
+2025-05-16 23:40:03 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:03 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:04 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:04 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:04 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:04 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:04 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:04 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:05 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:05 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:05 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:05 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:05 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:05 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:08 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:08 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:08 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:08 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:08 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru знак зодиака рак (попытка 2)
+2025-05-16 23:40:08 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:09 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:09 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:09 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:09 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:10 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:10 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:10 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:10 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:10 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:10 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:10 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:10 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:11 - get_link - WARNING - Достигнуто максимальное количество попыток решения капчи
+2025-05-16 23:40:11 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:11 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:12 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:12 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:14 - get_link - INFO - Попытка решения капчи #3
+2025-05-16 23:40:14 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:14 - get_link - INFO - Попытка решения капчи #4
+2025-05-16 23:40:14 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:15 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:15 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:16 - get_link - INFO - Капча решена успешно
+2025-05-16 23:40:16 - get_link - INFO - Капча решена успешно
+2025-05-16 23:40:16 - get_link - INFO - Капча решена успешно
+2025-05-16 23:40:17 - get_link - INFO - Капча решена успешно
+2025-05-16 23:40:17 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:17 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:18 - get_link - INFO - Попытка решения капчи #3
+2025-05-16 23:40:18 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:18 - get_link - INFO - Попытка решения капчи #3
+2025-05-16 23:40:18 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:19 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:19 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:20 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:20 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru фильмы про акул (попытка 1)
+2025-05-16 23:40:21 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:21 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:21 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:21 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:21 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:21 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:22 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:22 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:23 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:23 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:24 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:25 - get_link - INFO - Попытка решения капчи #5
+2025-05-16 23:40:25 - get_link - INFO - Попытка решения капчи #4
+2025-05-16 23:40:25 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:25 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:25 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:25 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:26 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:26 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:26 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:26 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:27 - get_link - INFO - Капча решена успешно
+2025-05-16 23:40:28 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:28 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:28 - get_link - INFO - Попытка решения капчи #4
+2025-05-16 23:40:28 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:28 - get_link - INFO - Попытка решения капчи #4
+2025-05-16 23:40:28 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:29 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:29 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:31 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:31 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:music.yandex.ru пицца оружие (попытка 1)
+2025-05-16 23:40:31 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:31 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:33 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:33 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:33 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:34 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:34 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru знак зодиака рак (попытка 3)
+2025-05-16 23:40:35 - get_link - INFO - Капча решена успешно
+2025-05-16 23:40:35 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:36 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:36 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:36 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 2)
+2025-05-16 23:40:36 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:36 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:36 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:36 - get_link - INFO - Попытка решения капчи #3
+2025-05-16 23:40:36 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:36 - get_link - WARNING - Достигнуто максимальное количество попыток решения капчи
+2025-05-16 23:40:36 - get_link - INFO - Попытка решения капчи #5
+2025-05-16 23:40:36 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:37 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:37 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:38 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:38 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:39 - get_link - INFO - Попытка решения капчи #5
+2025-05-16 23:40:39 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:39 - get_link - INFO - Попытка решения капчи #5
+2025-05-16 23:40:39 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:39 - get_link - INFO - Попытка решения капчи #3
+2025-05-16 23:40:39 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:39 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:42 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:42 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:43 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:43 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:43 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:43 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:43 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:44 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:46 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:46 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru фильмы про акул (попытка 2)
+2025-05-16 23:40:46 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:46 - get_link - INFO - Попытка решения капчи #3
+2025-05-16 23:40:46 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:46 - get_link - WARNING - Достигнуто максимальное количество попыток решения капчи
+2025-05-16 23:40:46 - get_link - INFO - Попытка решения капчи #4
+2025-05-16 23:40:46 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:47 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:47 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:50 - get_link - WARNING - Достигнуто максимальное количество попыток решения капчи
+2025-05-16 23:40:50 - get_link - WARNING - Достигнуто максимальное количество попыток решения капчи
+2025-05-16 23:40:50 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:50 - get_link - INFO - Попытка решения капчи #4
+2025-05-16 23:40:50 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:51 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:52 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:52 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:52 - get_link - INFO - Капча решена успешно
+2025-05-16 23:40:53 - get_link - INFO - Капча решена успешно
+2025-05-16 23:40:54 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:54 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:54 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru знак зодиака рак (попытка 1)
+2025-05-16 23:40:54 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:54 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:40:55 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:40:55 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:55 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:56 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:40:56 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:40:56 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:56 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:translate.yandex.ru как переводится на русский (попытка 1)
+2025-05-16 23:40:57 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:40:57 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:40:57 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:57 - get_link - INFO - Попытка решения капчи #4
+2025-05-16 23:40:57 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:57 - get_link - INFO - Попытка решения капчи #5
+2025-05-16 23:40:57 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:40:59 - get_link - INFO - Капча решена успешно
+2025-05-16 23:41:00 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:00 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:00 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:41:00 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:41:01 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:01 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:41:01 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:41:01 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:41:03 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:41:03 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:41:03 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:41:05 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:41:05 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:41:05 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:41:05 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:41:06 - get_link - INFO - Капча решена успешно
+2025-05-16 23:41:07 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:07 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:www.kinopoisk.ru годзилла 2 король монстров фильм 2019 (попытка 1)
+2025-05-16 23:41:08 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:41:08 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:41:08 - get_link - WARNING - Достигнуто максимальное количество попыток решения капчи
+2025-05-16 23:41:08 - get_link - INFO - Попытка решения капчи #5
+2025-05-16 23:41:08 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:41:09 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:10 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:41:10 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:41:10 - get_link - INFO - Капча решена успешно
+2025-05-16 23:41:10 - get_link - INFO - Капча решена успешно
+2025-05-16 23:41:10 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:10 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:music.yandex.ru человек яйца (попытка 1)
+2025-05-16 23:41:10 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:10 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:tv.yandex.ru программа передач на сегодня великий новгород (попытка 1)
+2025-05-16 23:41:11 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:11 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru фильмы про акул (попытка 3)
+2025-05-16 23:41:12 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 2)
+2025-05-16 23:41:12 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:41:13 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:41:13 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:41:13 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:41:13 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:41:14 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:41:15 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:41:15 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:41:15 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 2)
+2025-05-16 23:41:16 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 2)
+2025-05-16 23:41:16 - get_link - INFO - Капча решена успешно
+2025-05-16 23:41:16 - get_link - ERROR - Не удалось решить капчу с изображениями: Не удалось получить результат
+2025-05-16 23:41:17 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:41:17 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:41:17 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:41:17 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:41:17 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:17 - get_link - INFO - Обнаружена капча, пытаемся решить (попытка 1)
+2025-05-16 23:41:18 - get_link - ERROR - Не удалось получить ссылку на позиции 2: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:18 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:41:18 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:41:19 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:41:19 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:41:19 - get_link - INFO - Попытка решения капчи #1
+2025-05-16 23:41:19 - get_link - WARNING - Неизвестный тип капчи (попытка 1)
+2025-05-16 23:41:19 - get_link - ERROR - Не удалось получить ссылку на позиции 3: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 251, in _find_matching_link
+    element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:552:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-05-16 23:41:19 - get_link - WARNING - Не найдена подходящая ссылка для запроса site:yandex.ru знак зодиака рак (попытка 2)
+2025-05-16 23:41:19 - get_link - WARNING - Достигнуто максимальное количество попыток решения капчи
+2025-05-16 23:41:20 - get_link - INFO - Попытка решения капчи #2
+2025-05-16 23:41:20 - get_link - INFO - Капча решена успешно
+2025-05-16 23:41:20 - get_link - INFO - Обнаружена капча с изображениями
+2025-05-16 23:41:20 - get_link - ERROR - Ошибка при поиске (попытка 1): ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1395, in getresponse
+    response.begin()
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 34, in get_first_yandex_link
+    self._perform_search(query)
+  File "C:\Users\priva\Desktop\Zapros2\get_link.py", line 69, in _perform_search
+    self.driver.get(f"https://yandex.ru/search/?text={encoded_query}&lr=213")
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 427, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1395, in getresponse
+    response.begin()
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))

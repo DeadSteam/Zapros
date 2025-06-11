@@ -535,3 +535,56 @@ Backtrace:
 2025-05-16 22:44:29 - webdriver - INFO - WebDriver успешно инициализирован
 2025-05-16 22:44:29 - webdriver - INFO - WebDriver успешно инициализирован
 2025-05-16 22:44:29 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:16:32 - webdriver - ERROR - Ошибка при инициализации WebDriver: Truncated central directory
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 28, in init_driver
+    service = Service(GeckoDriverManager().install())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\firefox.py", line 39, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\core\manager.py", line 41, in _get_driver_binary_path
+    binary_path = self._cache_manager.save_file_to_cache(driver, file)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 54, in save_file_to_cache
+    files = self.unpack_archive(archive, path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 49, in unpack_archive
+    return self._file_manager.unpack_archive(archive, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\core\file_manager.py", line 57, in unpack_archive
+    return self.__extract_zip(archive_file, target_dir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\core\file_manager.py", line 63, in __extract_zip
+    archive = zip_class(archive_file.file_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1312, in __init__
+    self._RealGetContents()
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1406, in _RealGetContents
+    raise BadZipFile("Truncated central directory")
+zipfile.BadZipFile: Truncated central directory
+2025-05-16 23:16:36 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:16:37 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:16:37 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:34:52 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:34:53 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:34:53 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:34:53 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:34:54 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:34:54 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:34:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:34:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:34:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:34:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:53 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:53 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:53 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:54 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:54 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:55 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:56 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:56 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:57 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:57 - webdriver - INFO - WebDriver успешно инициализирован
+2025-05-16 23:38:59 - webdriver - INFO - WebDriver успешно инициализирован

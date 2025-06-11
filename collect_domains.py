@@ -1,11 +1,11 @@
 import logging
 from typing import Set, Optional
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
-from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
 import tldextract
 import time
 
@@ -42,19 +42,19 @@ class DomainExtractor:
 
     def __init__(self):
         self.logger = get_logger('domain_extractor')
-        self.driver: Optional[webdriver.Chrome] = None
+        self.driver: Optional[webdriver.Firefox] = None
         self.unique_domains: Set[str] = set(self.ALWAYS_INCLUDE)
 
     def init_driver(self) -> None:
-        """Инициализирует веб-драйвер Chrome."""
+        """Инициализирует веб-драйвер Firefox."""
         try:
             options = Options()
             options.add_argument('--disable-gpu')
             options.add_argument('--no-sandbox')
             options.add_argument('--headless')
             
-            service = Service(ChromeDriverManager().install())
-            self.driver = webdriver.Chrome(service=service, options=options)
+            service = Service(GeckoDriverManager().install())
+            self.driver = webdriver.Firefox(service=service, options=options)
             self.logger.info("Веб-драйвер успешно инициализирован")
         except Exception as e:
             log_exception(self.logger, "Ошибка при инициализации драйвера", e)

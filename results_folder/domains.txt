@@ -31,6 +31,7 @@ eda.yandex.ru
 edadeal.ru
 education.yandex.ru
 elama.ru
+expert.ya.ru
 go.yandex
 hd.kinopoisk.ru
 help.yandex.ru
@@ -59,7 +60,6 @@ shedevrum.ai
 site.yandex.ru
 smena.yandex.ru
 sourcecraft.dev
-split.yandex.ru
 surveys.yandex.ru
 tasks.yandex.ru
 taxi.yandex.ru

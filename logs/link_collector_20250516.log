@@ -695,3 +695,451 @@ Backtrace:
 2025-05-16 22:44:29 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
 2025-05-16 22:44:29 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня
 2025-05-16 22:44:29 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс
+2025-05-16 23:16:32 - link_collector - ERROR - Критическая ошибка в рабочем потоке: Truncated central directory
+Traceback (most recent call last):
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 48, in worker
+    driver = WebDriverManager.init_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\main.py", line 28, in init_driver
+    service = Service(GeckoDriverManager().install())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\firefox.py", line 39, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\core\manager.py", line 41, in _get_driver_binary_path
+    binary_path = self._cache_manager.save_file_to_cache(driver, file)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 54, in save_file_to_cache
+    files = self.unpack_archive(archive, path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 49, in unpack_archive
+    return self._file_manager.unpack_archive(archive, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\core\file_manager.py", line 57, in unpack_archive
+    return self.__extract_zip(archive_file, target_dir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\Desktop\Zapros2\.venv1\Lib\site-packages\webdriver_manager\core\file_manager.py", line 63, in __extract_zip
+    archive = zip_class(archive_file.file_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1312, in __init__
+    self._RealGetContents()
+  File "C:\Users\priva\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1406, in _RealGetContents
+    raise BadZipFile("Truncated central directory")
+zipfile.BadZipFile: Truncated central directory
+2025-05-16 23:16:36 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс
+2025-05-16 23:16:37 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 23:16:37 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 23:34:52 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru фильм детки
+2025-05-16 23:34:53 - link_collector - INFO - Обработка запроса: site:yandex.ru первый президент россии
+2025-05-16 23:34:53 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru футбол чемпионат англии
+2025-05-16 23:34:53 - link_collector - INFO - Обработка запроса: site:market.yandex.ru катушка зажигания
+2025-05-16 23:34:54 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик яндекс переводчик онлайн
+2025-05-16 23:34:54 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 23:34:55 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru партенопа
+2025-05-16 23:34:55 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru глубокое синее море
+2025-05-16 23:34:55 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru казанова 1 сезон
+2025-05-16 23:34:55 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru культовые сериалы
+2025-05-16 23:36:39 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 23:36:39 - link_collector - INFO - Обработка запроса: site:300.ya.ru как на клавиатуре поставить точку
+2025-05-16 23:36:39 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/6384/
+2025-05-16 23:36:39 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru москва псков поезд
+2025-05-16 23:36:39 - link_collector - INFO - Найдена ссылка: https://hd.kinopoisk.ru/sport/competition/114651/
+2025-05-16 23:36:39 - link_collector - INFO - Обработка запроса: site:music.yandex.ru хочешь земфира
+2025-05-16 23:36:55 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/1189814/
+2025-05-16 23:36:55 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru самый лучший день фильм 2015 актеры
+2025-05-16 23:36:55 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 23:36:55 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик
+2025-05-16 23:36:56 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/5504261/
+2025-05-16 23:36:56 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru черная любовь
+2025-05-16 23:36:56 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/lists/movies/100_greatest_TVseries/
+2025-05-16 23:36:56 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru ледяной драйв
+2025-05-16 23:36:56 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/9528/
+2025-05-16 23:36:56 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru чебоксары москва поезд
+2025-05-16 23:38:05 - link_collector - WARNING - Попытка 1: Ссылка не найдена для site:yandex.ru первый президент россии
+2025-05-16 23:38:05 - link_collector - WARNING - Попытка 1: Ссылка не найдена для site:market.yandex.ru катушка зажигания
+2025-05-16 23:38:19 - link_collector - INFO - Найдена ссылка: https://300.ya.ru/v_hjfIihqc
+2025-05-16 23:38:19 - link_collector - INFO - Обработка запроса: site:360.yandex.com почта яндекс войти в личный
+2025-05-16 23:38:19 - link_collector - INFO - Найдена ссылка: https://music.yandex.ru/album/81431/track/732405
+2025-05-16 23:38:19 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru футбол чемпионат англии
+2025-05-16 23:38:20 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/train/moscow--pskov-1
+2025-05-16 23:38:20 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru то лето страсти фильм 2011
+2025-05-16 23:38:53 - link_collector - INFO - Обработка запроса: site:pay.yandex.ru карта яндекс пэй
+2025-05-16 23:38:53 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа тв на сегодня все каналы спб
+2025-05-16 23:38:53 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru красный белый и королевский синий фильм 2023
+2025-05-16 23:38:54 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru мачо и ботан фильм 2012
+2025-05-16 23:38:54 - link_collector - INFO - Обработка запроса: site:yandex.ru орнамент
+2025-05-16 23:38:55 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru уфа раевка электричка
+2025-05-16 23:38:55 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик
+2025-05-16 23:38:56 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru эволюция фильм
+2025-05-16 23:38:56 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru телепрограмма победа
+2025-05-16 23:38:57 - link_collector - INFO - Обработка запроса: site:realty.yandex.ru жку это
+2025-05-16 23:38:57 - link_collector - INFO - Обработка запроса: site:yandex.ru бабенко алена
+2025-05-16 23:38:58 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban/ufa-train-station--raevka-train-station/today
+2025-05-16 23:38:58 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru раевка уфа электричка
+2025-05-16 23:38:59 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru человек ниоткуда фильм 2010
+2025-05-16 23:39:00 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban/raevka-train-station--ufa-train-station/today
+2025-05-16 23:39:00 - link_collector - INFO - Обработка запроса: site:realty.yandex.ru продажа домов
+2025-05-16 23:39:14 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/413080/
+2025-05-16 23:39:14 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru мачо и ботан фильм 2012
+2025-05-16 23:39:17 - link_collector - INFO - Найдена ссылка: https://realty.yandex.ru/journal/post/rasshifrovka-kvitancii-zhkh/
+2025-05-16 23:39:17 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru спуск в бездну
+2025-05-16 23:39:17 - link_collector - INFO - Найдена ссылка: https://pay.yandex.ru/business
+2025-05-16 23:39:17 - link_collector - INFO - Обработка запроса: site:pay.yandex.ru яндекс пэй карта
+2025-05-16 23:39:17 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/5413/
+2025-05-16 23:39:17 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа тв на сегодня тюмень
+2025-05-16 23:39:17 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/4985106/
+2025-05-16 23:39:17 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru синистер фильм
+2025-05-16 23:39:17 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/2?&period=all-day
+2025-05-16 23:39:17 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа тв на сегодня спб все каналы
+2025-05-16 23:39:17 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/413080/
+2025-05-16 23:39:17 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru расписание электричек яндекс
+2025-05-16 23:39:17 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 23:39:17 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик
+2025-05-16 23:39:19 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/5212571/
+2025-05-16 23:39:19 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru фильм они
+2025-05-16 23:39:19 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/channel/pobeda-1355
+2025-05-16 23:39:19 - link_collector - INFO - Обработка запроса: site:yandex.ru телепрограмма победа
+2025-05-16 23:39:19 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/573705/
+2025-05-16 23:39:19 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru пенелопа
+2025-05-16 23:39:19 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/55
+2025-05-16 23:39:19 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru тв программа на сегодня тюмень
+2025-05-16 23:39:20 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/590022/
+2025-05-16 23:39:20 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru казанова сериал 2020 актеры
+2025-05-16 23:39:20 - link_collector - INFO - Найдена ссылка: https://pay.yandex.ru/business
+2025-05-16 23:39:20 - link_collector - INFO - Обработка запроса: site:plus.yandex.ru карта яндекс пэй
+2025-05-16 23:39:20 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/2
+2025-05-16 23:39:20 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru диверсант идеальный штурм сериал с 2022 г
+2025-05-16 23:39:20 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban
+2025-05-16 23:39:20 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru запретная любовь
+2025-05-16 23:39:20 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/
+2025-05-16 23:39:20 - link_collector - INFO - Обработка запроса: site:ya.ru яндекс
+2025-05-16 23:39:20 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/55
+2025-05-16 23:39:20 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru тв программа тюмень на сегодня
+2025-05-16 23:39:21 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/1189814/
+2025-05-16 23:39:21 - link_collector - INFO - Обработка запроса: site:music.yandex.ru пицца оружие
+2025-05-16 23:39:21 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1021116/
+2025-05-16 23:39:21 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru фильм вымирание 2015
+2025-05-16 23:39:21 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/189651/
+2025-05-16 23:39:21 - link_collector - INFO - Обработка запроса: site:music.yandex.ru sing
+2025-05-16 23:39:22 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/channel/pobeda-1355
+2025-05-16 23:39:22 - link_collector - INFO - Обработка запроса: site:yandex.ru знак зодиака рак
+2025-05-16 23:39:22 - link_collector - INFO - Найдена ссылка: https://ya.ru/
+2025-05-16 23:39:22 - link_collector - INFO - Обработка запроса: site:yandex.eu яндекс
+2025-05-16 23:39:22 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/4715473/
+2025-05-16 23:39:22 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru затащи меня в ад фильм 2009
+2025-05-16 23:39:22 - link_collector - INFO - Найдена ссылка: https://plus.yandex.ru/pay
+2025-05-16 23:39:22 - link_collector - INFO - Обработка запроса: site:plus.yandex.ru яндекс пэй карта
+2025-05-16 23:39:22 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/820277/
+2025-05-16 23:39:22 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru северный полюс смотреть онлайн
+2025-05-16 23:39:23 - link_collector - INFO - Найдена ссылка: https://music.yandex.ru/album/7205462/track/31915338
+2025-05-16 23:39:23 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru пенелопа
+2025-05-16 23:39:23 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/55
+2025-05-16 23:39:23 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа тв тюмень на сегодня
+2025-05-16 23:39:23 - link_collector - INFO - Найдена ссылка: https://plus.yandex.ru/pay
+2025-05-16 23:39:23 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru как пишется по английски
+2025-05-16 23:39:23 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/405514/
+2025-05-16 23:39:23 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru палата
+2025-05-16 23:39:24 - link_collector - INFO - Найдена ссылка: https://yandex.eu/
+2025-05-16 23:39:24 - link_collector - INFO - Обработка запроса: site:yandex.ru погода
+2025-05-16 23:39:25 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/189651/
+2025-05-16 23:39:25 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru казанова 1 сезон
+2025-05-16 23:39:27 - link_collector - INFO - Найдена ссылка: https://yandex.ru/video/preview/1767841083362934606
+2025-05-16 23:39:27 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru мотылек
+2025-05-16 23:39:27 - link_collector - INFO - Найдена ссылка: https://realty.yandex.ru/moskva/kupit/dom/bez-posrednikov/
+2025-05-16 23:39:27 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru перевод head
+2025-05-16 23:39:28 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/939411/
+2025-05-16 23:39:28 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru мотылек
+2025-05-16 23:39:28 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/Head
+2025-05-16 23:39:28 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru bag
+2025-05-16 23:39:28 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/Bag
+2025-05-16 23:39:28 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru фото переводчик с китайского на русский
+2025-05-16 23:39:28 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/939411/
+2025-05-16 23:39:28 - link_collector - INFO - Обработка запроса: site:yandex.ru погода волжский на неделю
+2025-05-16 23:39:29 - link_collector - INFO - Найдена ссылка: https://yandex.ru/pogoda/volzhskiy
+2025-05-16 23:39:29 - link_collector - INFO - Обработка запроса: site:yandex.ru погода на неделю волжский
+2025-05-16 23:39:29 - link_collector - INFO - Найдена ссылка: https://afisha.yandex.ru/artist/alena-babenko?city=moscow
+2025-05-16 23:39:29 - link_collector - INFO - Обработка запроса: site:yandex.ru демет оздемир
+2025-05-16 23:39:37 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/491522/
+2025-05-16 23:39:37 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru топ сериалов 2024
+2025-05-16 23:39:38 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/media/article/4009629/
+2025-05-16 23:39:38 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru запретная любовь
+2025-05-16 23:39:38 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/491522/
+2025-05-16 23:39:38 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru топ сериалов 2024
+2025-05-16 23:39:39 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/media/article/4009629/
+2025-05-16 23:39:39 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru опасная игра фильм 2022
+2025-05-16 23:39:39 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/55
+2025-05-16 23:39:39 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru нулевой день фильм
+2025-05-16 23:39:39 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 23:39:39 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru как по английски пишется
+2025-05-16 23:39:39 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/5274400/
+2025-05-16 23:39:39 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru красный фильм
+2025-05-16 23:39:40 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/41895/
+2025-05-16 23:39:40 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru свинка фильм 2022
+2025-05-16 23:39:40 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1178075/
+2025-05-16 23:39:40 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru молодая жена фильм 1978 смотреть онлайн в хорошем качестве бесплатно
+2025-05-16 23:39:40 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 23:39:40 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru сериал на автомате
+2025-05-16 23:39:40 - link_collector - INFO - Найдена ссылка: https://music.yandex.ru/artist/9549040/tracks
+2025-05-16 23:39:40 - link_collector - INFO - Обработка запроса: site:yandex.ru погода на неделю в оренбурге
+2025-05-16 23:39:40 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/4478010/
+2025-05-16 23:39:40 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru пипец 2 фильм 2013
+2025-05-16 23:39:40 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/46683/
+2025-05-16 23:39:40 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru они фильм
+2025-05-16 23:39:40 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/5388902/
+2025-05-16 23:39:40 - link_collector - INFO - Обработка запроса: site:tv.yandex.by телепрограмма на сегодня новокузнецк
+2025-05-16 23:39:41 - link_collector - INFO - Найдена ссылка: https://yandex.ru/pogoda/orenburg
+2025-05-16 23:39:41 - link_collector - INFO - Обработка запроса: site:yandex.ru погода в оренбурге на неделю
+2025-05-16 23:39:41 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/520648/
+2025-05-16 23:39:41 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru эволюция фильм
+2025-05-16 23:39:41 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1021116/
+2025-05-16 23:39:41 - link_collector - INFO - Обработка запроса: site:auto.ru ниссан кашкай купить
+2025-05-16 23:39:42 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/1189814/
+2025-05-16 23:39:42 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru самый лучший день фильм 2015 актеры
+2025-05-16 23:39:42 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/445148/
+2025-05-16 23:39:42 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru огонь и вода и медные трубы
+2025-05-16 23:39:42 - link_collector - INFO - Найдена ссылка: https://yandex.ru/pogoda/moscow
+2025-05-16 23:39:42 - link_collector - INFO - Обработка запроса: site:yandex.ru игры
+2025-05-16 23:39:42 - link_collector - INFO - Найдена ссылка: https://tv.yandex.by/237
+2025-05-16 23:39:42 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru русские горки 2021 сериал смотреть онлайн бесплатно в хорошем качестве
+2025-05-16 23:39:42 - link_collector - INFO - Найдена ссылка: https://yandex.ru/pogoda/orenburg
+2025-05-16 23:39:42 - link_collector - INFO - Обработка запроса: site:yandex.ru логопед алена васильева
+2025-05-16 23:39:43 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 23:39:43 - link_collector - INFO - Обработка запроса: site:yandex.ru игры яндекс
+2025-05-16 23:39:43 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/42747/
+2025-05-16 23:39:43 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru сериал больше чем любовь
+2025-05-16 23:39:43 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/843784/cast/
+2025-05-16 23:39:43 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru казанова 1 сезон
+2025-05-16 23:39:43 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/1294120/
+2025-05-16 23:39:43 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru грешное тело фильм 2017
+2025-05-16 23:39:43 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 23:39:43 - link_collector - INFO - Обработка запроса: site:yandex.ru яндекс игры
+2025-05-16 23:39:43 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/1189814/
+2025-05-16 23:39:43 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru самый лучший день фильм 2015 актеры
+2025-05-16 23:39:44 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1009672/
+2025-05-16 23:39:44 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru тайная жизнь фильм 2019
+2025-05-16 23:39:44 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/843784/cast/
+2025-05-16 23:39:44 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru сериал черная любовь
+2025-05-16 23:39:45 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/ocr
+2025-05-16 23:39:45 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик с китайского на русский фото
+2025-05-16 23:39:45 - link_collector - INFO - Найдена ссылка: https://yandex.ru/pogoda/ru/volzhskiy/details/running/7-day-weather
+2025-05-16 23:39:45 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru соник в кино фильм 2020
+2025-05-16 23:39:45 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/ocr
+2025-05-16 23:39:45 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru перевод true
+2025-05-16 23:39:45 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1016160/
+2025-05-16 23:39:45 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru огонь фильм
+2025-05-16 23:39:45 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/true
+2025-05-16 23:39:45 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru handsome перевод
+2025-05-16 23:39:46 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1183599/
+2025-05-16 23:39:46 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru ешь молись люби
+2025-05-16 23:39:46 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/Handsome
+2025-05-16 23:39:46 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru как переводится на русский
+2025-05-16 23:39:46 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/454522/
+2025-05-16 23:39:46 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru фильм огонь
+2025-05-16 23:39:55 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/4630415/
+2025-05-16 23:39:55 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru финист первый богатырь актеры
+2025-05-16 23:39:55 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/5230098/cast/
+2025-05-16 23:39:55 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru опасная игра фильм 2022
+2025-05-16 23:39:56 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/4630415/
+2025-05-16 23:39:56 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru финист первый богатырь актеры
+2025-05-16 23:39:56 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/5230098/cast/
+2025-05-16 23:39:56 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru электричка москва тула
+2025-05-16 23:39:57 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban/moscow-kurskaya--tula-1-kurskaia/today
+2025-05-16 23:39:57 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru электричка тула москва
+2025-05-16 23:39:57 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban/tula--moscow
+2025-05-16 23:39:57 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru годзилла 2 король монстров фильм 2019
+2025-05-16 23:39:58 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/840045/
+2025-05-16 23:39:58 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru годзилла 2 король монстров фильм 2019
+2025-05-16 23:39:58 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/924229/
+2025-05-16 23:39:58 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru поезд гомель минск
+2025-05-16 23:39:58 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/991632/
+2025-05-16 23:39:58 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru анна синякина фильмы
+2025-05-16 23:39:59 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/5413/
+2025-05-16 23:39:59 - link_collector - INFO - Обработка запроса: site:hd.kinopoisk.ru идеальная пара дорама
+2025-05-16 23:39:59 - link_collector - INFO - Найдена ссылка: https://yandex.ru/video/preview/16240634114316360786
+2025-05-16 23:39:59 - link_collector - INFO - Обработка запроса: site:yandex.ru фильмы про акул
+2025-05-16 23:40:00 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/1100402/
+2025-05-16 23:40:00 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru восстание зловещих мертвецов
+2025-05-16 23:40:00 - link_collector - INFO - Найдена ссылка: https://yandex.ru/games/
+2025-05-16 23:40:00 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик с английского на русский
+2025-05-16 23:40:00 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/train/gomel--minsk
+2025-05-16 23:40:00 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru сериал черная любовь
+2025-05-16 23:40:00 - link_collector - INFO - Найдена ссылка: https://hd.kinopoisk.ru/film/42c4a208363c34cc91692272e92a9e45
+2025-05-16 23:40:00 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru идеальная пара дорама
+2025-05-16 23:40:00 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/name/464134/
+2025-05-16 23:40:00 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru фильм государственный преступник 1964
+2025-05-16 23:40:01 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1446132/
+2025-05-16 23:40:01 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru русские горки 2021 сериал смотреть онлайн бесплатно в хорошем качестве
+2025-05-16 23:40:01 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/924229/
+2025-05-16 23:40:01 - link_collector - INFO - Обработка запроса: site:music.yandex.ru человек яйца
+2025-05-16 23:40:01 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/?lang=en-ru&text=-
+2025-05-16 23:40:01 - link_collector - INFO - Обработка запроса: site:yandex.ru переводчик с английского на русский
+2025-05-16 23:40:01 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/44592/
+2025-05-16 23:40:01 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru одна капля фильм 2016
+2025-05-16 23:40:01 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/648831/
+2025-05-16 23:40:01 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru фильм есения
+2025-05-16 23:40:01 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/1100402/
+2025-05-16 23:40:01 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru восстание зловещих мертвецов
+2025-05-16 23:40:01 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/?lang=en-ru&text=-
+2025-05-16 23:40:01 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня
+2025-05-16 23:40:02 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/901900/
+2025-05-16 23:40:02 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru манюня новогодние приключения
+2025-05-16 23:40:02 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/63884/
+2025-05-16 23:40:02 - link_collector - INFO - Обработка запроса: site:music.yandex.ru три белых коня
+2025-05-16 23:40:02 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1446132/
+2025-05-16 23:40:02 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач на сегодня великий новгород
+2025-05-16 23:40:02 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1183599/
+2025-05-16 23:40:02 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru соник в кино фильм 2020
+2025-05-16 23:40:03 - link_collector - INFO - Найдена ссылка: https://music.yandex.ru/album/4644433/track/36812204
+2025-05-16 23:40:03 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru пермь верещагино расписание электричек
+2025-05-16 23:40:03 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/213?period=now
+2025-05-16 23:40:03 - link_collector - INFO - Обработка запроса: site:yandex.ru программа передач на сегодня
+2025-05-16 23:40:03 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1016160/
+2025-05-16 23:40:03 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru огонь фильм
+2025-05-16 23:40:03 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1183599/
+2025-05-16 23:40:03 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru ешь молись люби
+2025-05-16 23:40:08 - link_collector - INFO - Найдена ссылка: https://auto.ru/cars/nissan/qashqai/all/
+2025-05-16 23:40:08 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru фильм 13 район
+2025-05-16 23:40:09 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/81522/
+2025-05-16 23:40:09 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru перевод teddy bear
+2025-05-16 23:40:10 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/Teddy%20Bear
+2025-05-16 23:40:10 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru banana
+2025-05-16 23:40:10 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/banana
+2025-05-16 23:40:10 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru фильм 13 район
+2025-05-16 23:40:16 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/454522/
+2025-05-16 23:40:16 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru фильм огонь
+2025-05-16 23:40:16 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/5253703/
+2025-05-16 23:40:16 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru всем парням p s я люблю тебя фильм 2020
+2025-05-16 23:40:16 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban/perm-2-station--vereschagino/today
+2025-05-16 23:40:16 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru расписание электричек верещагино пермь
+2025-05-16 23:40:17 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/213
+2025-05-16 23:40:17 - link_collector - INFO - Обработка запроса: site:tv.yandex.ru программа передач
+2025-05-16 23:40:17 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1183599/
+2025-05-16 23:40:17 - link_collector - INFO - Обработка запроса: site:yandex.ru кунг фу панда 3
+2025-05-16 23:40:17 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1226369/
+2025-05-16 23:40:17 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru мертвый сезон сериал 2022
+2025-05-16 23:40:17 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban/vereschagino-station--perm-2-station/today
+2025-05-16 23:40:17 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru расписание электричек пермь верещагино
+2025-05-16 23:40:18 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/?flag=
+2025-05-16 23:40:18 - link_collector - INFO - Обработка запроса: site:yandex.ru программа передач
+2025-05-16 23:40:18 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/4652297/
+2025-05-16 23:40:18 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru сама жизнь фильм 2018
+2025-05-16 23:40:18 - link_collector - INFO - Найдена ссылка: https://yandex.ru/video/preview/14056974137478521596
+2025-05-16 23:40:18 - link_collector - INFO - Обработка запроса: site:yandex.ru зоя федорова
+2025-05-16 23:40:18 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban/perm-2-station--vereschagino/today
+2025-05-16 23:40:18 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru clear
+2025-05-16 23:40:18 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/?flag=
+2025-05-16 23:40:18 - link_collector - INFO - Обработка запроса: site:music.yandex.ru музыка яндекс
+2025-05-16 23:40:18 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1007921/
+2025-05-16 23:40:18 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru ледяной человек 1984
+2025-05-16 23:40:19 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/Clear
+2025-05-16 23:40:19 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru ever
+2025-05-16 23:40:19 - link_collector - INFO - Найдена ссылка: https://music.yandex.ru/?a=
+2025-05-16 23:40:19 - link_collector - INFO - Обработка запроса: site:yandex.ru музыка яндекс
+2025-05-16 23:40:19 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/Ever
+2025-05-16 23:40:19 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru rate
+2025-05-16 23:40:20 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/Rate%0A
+2025-05-16 23:40:20 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru идеальная пара дорама
+2025-05-16 23:40:20 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/648831/
+2025-05-16 23:40:20 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru фильм есения
+2025-05-16 23:40:20 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/63884/
+2025-05-16 23:40:20 - link_collector - INFO - Обработка запроса: site:afisha.yandex.ru концерты самара афиша
+2025-05-16 23:40:21 - link_collector - INFO - Найдена ссылка: https://afisha.yandex.ru/samara/concert
+2025-05-16 23:40:21 - link_collector - INFO - Обработка запроса: site:afisha.yandex.ru афиша самара концерты
+2025-05-16 23:40:27 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/81522/
+2025-05-16 23:40:27 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru скажи я люблю тебя мультсериал 2012 2013
+2025-05-16 23:40:27 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/709625/
+2025-05-16 23:40:27 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru фильм гипнотик
+2025-05-16 23:40:28 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1319157/
+2025-05-16 23:40:28 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru аниме маг на полную ставку
+2025-05-16 23:40:28 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/1112797/
+2025-05-16 23:40:28 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru во все тяжкое фильм
+2025-05-16 23:40:28 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1047881/
+2025-05-16 23:40:28 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru двое и одна фильм 1988
+2025-05-16 23:40:29 - link_collector - INFO - Найдена ссылка: https://afisha.yandex.ru/artist/zoia-fedorova?city=moscow
+2025-05-16 23:40:29 - link_collector - INFO - Обработка запроса: site:yandex.ru борис новиков
+2025-05-16 23:40:29 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/44361/
+2025-05-16 23:40:29 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru маргарита сериал
+2025-05-16 23:40:29 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/4821201/
+2025-05-16 23:40:29 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru скажи я люблю тебя мультсериал 2012 2013
+2025-05-16 23:40:34 - link_collector - WARNING - Попытка 1: Ссылка не найдена для site:yandex.ru знак зодиака рак
+2025-05-16 23:40:35 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/12313/
+2025-05-16 23:40:35 - link_collector - INFO - Обработка запроса: site:yandex.kz бизнес яндекс личный
+2025-05-16 23:40:35 - link_collector - INFO - Найдена ссылка: https://business.yandex.kz/
+2025-05-16 23:40:35 - link_collector - INFO - Обработка запроса: site:docs.yandex.ru таблицы онлайн
+2025-05-16 23:40:36 - link_collector - INFO - Найдена ссылка: https://docs.yandex.ru/
+2025-05-16 23:40:36 - link_collector - INFO - Обработка запроса: site:docs.yandex.ru онлайн таблицы
+2025-05-16 23:40:36 - link_collector - INFO - Найдена ссылка: https://docs.yandex.ru/
+2025-05-16 23:40:36 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru галина данелия юркова
+2025-05-16 23:40:39 - link_collector - INFO - Найдена ссылка: https://tv.yandex.ru/117949/program/koroli-epizoda-7099034
+2025-05-16 23:40:39 - link_collector - INFO - Обработка запроса: site:yandex.ru погода ахтубинск
+2025-05-16 23:40:40 - link_collector - INFO - Найдена ссылка: https://yandex.ru/pogoda/ahtubinsk
+2025-05-16 23:40:40 - link_collector - INFO - Обработка запроса: site:yandex.ru инкуб
+2025-05-16 23:40:50 - link_collector - INFO - Найдена ссылка: https://yandex.ru/video/preview/11266964515874797951
+2025-05-16 23:40:50 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru что можно посмотреть
+2025-05-16 23:40:50 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/lists/movies/top250/
+2025-05-16 23:40:50 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru что можно посмотреть
+2025-05-16 23:40:52 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/name/284948/
+2025-05-16 23:40:52 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru волшебная сила фильм 1970
+2025-05-16 23:40:53 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/85188/
+2025-05-16 23:40:53 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru андрей бурковский фильмы
+2025-05-16 23:40:53 - link_collector - INFO - Найдена ссылка: https://music.yandex.ru/album/660238/track/6006252
+2025-05-16 23:40:53 - link_collector - INFO - Обработка запроса: site:music.yandex.ru нервы батареи текст
+2025-05-16 23:40:53 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/name/1769503/
+2025-05-16 23:40:53 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru фильм горячий снег
+2025-05-16 23:40:53 - link_collector - INFO - Найдена ссылка: https://music.yandex.ru/album/474096/track/35487142
+2025-05-16 23:40:53 - link_collector - INFO - Обработка запроса: site:music.yandex.ru хардкор майнкрафт
+2025-05-16 23:40:53 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/44582/
+2025-05-16 23:40:53 - link_collector - INFO - Обработка запроса: site:music.yandex.ru песни 2000 список популярных
+2025-05-16 23:40:53 - link_collector - INFO - Найдена ссылка: https://music.yandex.ru/album/15917709
+2025-05-16 23:40:53 - link_collector - INFO - Обработка запроса: site:music.yandex.ru текст штиль
+2025-05-16 23:40:54 - link_collector - INFO - Найдена ссылка: https://music.yandex.ru/album/63345/track/592657
+2025-05-16 23:40:54 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru magician перевод
+2025-05-16 23:40:54 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/magician
+2025-05-16 23:40:54 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru miracle
+2025-05-16 23:40:55 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/dictionary/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/miracle
+2025-05-16 23:40:55 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru фильм синистер
+2025-05-16 23:40:59 - link_collector - INFO - Найдена ссылка: https://afisha.yandex.ru/samara/concert
+2025-05-16 23:40:59 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru сериал апостол
+2025-05-16 23:41:00 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/405627/
+2025-05-16 23:41:00 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru мультики детства
+2025-05-16 23:41:00 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/lists/movies/best_of_soyuzmultfilm/
+2025-05-16 23:41:00 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru актеры такси 3
+2025-05-16 23:41:00 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/14339/cast/
+2025-05-16 23:41:00 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru безымянная звезда
+2025-05-16 23:41:01 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/77248/
+2025-05-16 23:41:01 - link_collector - INFO - Обработка запроса: site:kinopoisk.ru любовницы фильм 2019
+2025-05-16 23:41:02 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 23:41:02 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru как на русский переводится
+2025-05-16 23:41:02 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 23:41:02 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик фото с китайского на русский
+2025-05-16 23:41:03 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/ocr
+2025-05-16 23:41:03 - link_collector - INFO - Обработка запроса: site:translate.yandex.ru переводчик с английского на китайский
+2025-05-16 23:41:06 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/lists/movies/top250/
+2025-05-16 23:41:06 - link_collector - INFO - Обработка запроса: site:yandex.ru джейн фонда
+2025-05-16 23:41:10 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/590022/
+2025-05-16 23:41:10 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru красный белый и королевский синий фильм 2023
+2025-05-16 23:41:10 - link_collector - INFO - Найдена ссылка: https://music.yandex.ru/genre/%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%202000-%D1%85
+2025-05-16 23:41:10 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru расписание электричек кузьмолово девяткино
+2025-05-16 23:41:11 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/4985106/
+2025-05-16 23:41:11 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru синистер фильм
+2025-05-16 23:41:11 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban/kuzmolovo-platform--devyatkino-station/today
+2025-05-16 23:41:11 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru москва дубна электричка
+2025-05-16 23:41:11 - link_collector - WARNING - Попытка 1: Ссылка не найдена для site:yandex.ru фильмы про акул
+2025-05-16 23:41:12 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/590022/
+2025-05-16 23:41:12 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru казанова сериал 2020 актеры
+2025-05-16 23:41:12 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/all-transport/moscow--dubna-moscow-and-moscow-region
+2025-05-16 23:41:12 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru расписание электричек девяткино кузьмолово
+2025-05-16 23:41:12 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/all-transport/devyatkino-station--kuzmolovo-platform
+2025-05-16 23:41:12 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru расписание электричек москва звенигород
+2025-05-16 23:41:13 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban/moscow-belorusskaya--zvenigorod-train-station/today
+2025-05-16 23:41:13 - link_collector - INFO - Обработка запроса: site:rasp.yandex.ru расписание электричек звенигород москва
+2025-05-16 23:41:13 - link_collector - INFO - Найдена ссылка: https://rasp.yandex.ru/suburban/zvenigorod-train-station--moscow-belorusskaya/today
+2025-05-16 23:41:13 - link_collector - INFO - Обработка запроса: site:travel.yandex.ru сочи стамбул
+2025-05-16 23:41:16 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/film/1100374/
+2025-05-16 23:41:16 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru сериал апостол
+2025-05-16 23:41:17 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/series/405627/
+2025-05-16 23:41:17 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru мультики детства
+2025-05-16 23:41:17 - link_collector - INFO - Найдена ссылка: https://www.kinopoisk.ru/lists/movies/best_of_soyuzmultfilm/
+2025-05-16 23:41:17 - link_collector - INFO - Обработка запроса: site:www.kinopoisk.ru актеры такси 3
+2025-05-16 23:41:20 - link_collector - INFO - Найдена ссылка: https://translate.yandex.ru/translator/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9-%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9
+2025-05-16 23:41:20 - link_collector - INFO - Обработка запроса: site:300.ya.ru россия в системе международных отношений 8 класс

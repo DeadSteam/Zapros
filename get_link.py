@@ -24,11 +24,11 @@ class YandexLinkCollector:
         self.logger = get_logger('get_link')
         self.wait = WebDriverWait(driver, 10)
 
-    def get_first_yandex_link(self, query: str, domain: str) -> Optional[str]:
-        """Получает первую ссылку из результатов поиска Яндекс."""
+    def get_yandex_links(self, query: str, domain: str, max_links: int = 10) -> List[str]:
+        """Получает список ссылок из результатов поиска Яндекс."""
         max_attempts = 3
+        found_links = []
 
-        time.sleep(100)
         for attempt in range(max_attempts):
             try:
                 # Таймаут для поисковых запросов
@@ -42,11 +42,13 @@ class YandexLinkCollector:
                     self.logger.info(f"Обнаружена капча, пытаемся решить (попытка {attempt + 1})")
                     self._handle_captcha()
                 
-                link = self._find_matching_link(domain)
-                if link:
-                    return link
+                links = self._find_matching_links(domain, max_links)
+                if links:
+                    found_links = links
+                    self.logger.info(f"Найдено {len(links)} ссылок")
+                    break
                     
-                self.logger.warning(f"Не найдена подходящая ссылка для запроса {query} (попытка {attempt + 1})")
+                self.logger.warning(f"Не найдены подходящие ссылки для запроса {query} (попытка {attempt + 1})")
                 
                 if attempt < max_attempts - 1:
                     # Если это не последняя попытка, делаем паузу и пробуем снова
@@ -60,10 +62,10 @@ class YandexLinkCollector:
                     time.sleep(5)
                     continue
                 else:
-                    # Если это последняя попытка, возвращаем None
-                    return None
+                    # Если это последняя попытка, возвращаем пустой список
+                    return []
                     
-        return None
+        return found_links
 
     def _perform_search(self, query: str) -> None:
         """Выполняет поисковый запрос в Яндекс."""
@@ -245,27 +247,55 @@ class YandexLinkCollector:
         button = self.driver.find_element(By.XPATH, '//*[@id="advanced-captcha-form"]/div/div/div[3]/button[3]/div')
         button.click()
 
-    def _find_matching_link(self, domain: str) -> Optional[str]:
-        """Ищет первую подходящую ссылку в результатах поиска."""
-        for position in [2, 3]:
-            try:
-                xpath = f'//*[@id="search-result"]/li[{position}]/div/div[2]/div/a'
-                element = self.wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
-                link = element.get_attribute('href')
-                if link and domain in urlparse(link).netloc:
-                    return link
-            except Exception as e:
-                log_exception(self.logger, f"Не удалось получить ссылку на позиции {position}", e)
-                continue
-        return None
+    def _find_matching_links(self, domain: str, max_links: int = 10) -> List[str]:
+        """Ищет подходящие ссылки в результатах поиска."""
+        links = []
+        try:
+            # Ищем все элементы результатов поиска
+            search_result_element = self.wait.until(
+                EC.presence_of_element_located((By.ID, "search-result"))
+            )
+            
+            # Находим все элементы li, которые содержат ссылки
+            search_items = search_result_element.find_elements(By.XPATH, "./li")
+            
+            for item in search_items:
+                if len(links) >= max_links:
+                    break
+                
+                try:
+                    # Ищем ссылку внутри элемента результата поиска
+                    link_element = item.find_element(By.XPATH, ".//div/div[2]/div/a")
+                    href = link_element.get_attribute('href')
+                    
+                    # Проверяем, содержит ли URL нужный домен
+                    if href and domain in urlparse(href).netloc:
+                        links.append(href)
+                except Exception as e:
+                    # Игнорируем элементы без ссылок или с ошибками
+                    continue
+            
+            self.logger.info(f"Найдено {len(links)} подходящих ссылок")
+            return links
+            
+        except Exception as e:
+            log_exception(self.logger, "Ошибка при поиске ссылок", e)
+            return []
 
 
-def get_first_yandex_link(driver: WebDriver, query: str, domain: str) -> Optional[str]:
-    """Получает первую ссылку из результатов поиска Яндекс."""
+def get_yandex_links(driver: WebDriver, query: str, domain: str, max_links: int = 10) -> List[str]:
+    """Получает список ссылок из результатов поиска Яндекс."""
     logger = get_logger('get_link')
     try:
         collector = YandexLinkCollector(driver)
-        return collector.get_first_yandex_link(query, domain)
+        return collector.get_yandex_links(query, domain, max_links)
     except Exception as e:
-        log_exception(logger, f"Ошибка при получении ссылки для запроса '{query}' и домена '{domain}'", e)
-        return None
+        log_exception(logger, f"Ошибка при получении ссылок для запроса '{query}' и домена '{domain}'", e)
+        return []
+
+
+# Для совместимости со старым кодом
+def get_first_yandex_link(driver: WebDriver, query: str, domain: str) -> Optional[str]:
+    """Получает первую ссылку из результатов поиска Яндекс."""
+    links = get_yandex_links(driver, query, domain, 1)
+    return links[0] if links else None
