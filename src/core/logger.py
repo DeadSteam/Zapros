@@ -3,8 +3,8 @@ import time
 from logging.handlers import RotatingFileHandler
 from typing import Optional
 
-from core.paths import paths
-from core.config import LOG_MAX_FILE_SIZE, LOG_BACKUP_COUNT
+from src.core.paths import paths
+from src.core.config import LOG_MAX_FILE_SIZE, LOG_BACKUP_COUNT
 
 # Убедимся, что директория для логов существует
 paths.LOGS_DIR.mkdir(exist_ok=True)

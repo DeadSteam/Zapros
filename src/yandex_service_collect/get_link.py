@@ -5,9 +5,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.remote.webdriver import WebDriver
-from captcha_solver import CaptchaSolver
-from core.logger import get_logger, log_exception
-from core.config import (
+from src.captcha.captcha_solver import CaptchaSolver
+from src.core.logger import get_logger, log_exception
+from src.core.config import (
     DEFAULT_TIMEOUT,
     SEARCH_MAX_ATTEMPTS,
     SEARCH_TIMEOUT,

@@ -1,6 +1,10 @@
 import sys
 import os
 
+from src.yandex_service_collect.collect_domains import run_collect_domains
+from src.yandex_service_collect.collect_keywords import run_collect_keywords
+from src.yandex_service_collect.run import run_collect_links
+
 # Добавляем директорию src в Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
@@ -12,7 +16,7 @@ from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.firefox.options import Options
 from webdriver_manager.firefox import GeckoDriverManager
 
-from get_link import get_yandex_links
+from src.yandex_service_collect.get_link import get_yandex_links
 from create_result import run_create_result
 from core.paths import paths
 from core.logger import get_logger, log_exception, app_logger, webdriver_logger
@@ -196,12 +200,8 @@ class Application:
             #paths.cleanup()  # Очищаем директории
             #run_collect_domains()  # Собираем домены
             #run_collect_keywords()  # Собираем ключевые слова
-            collector = LinkCollector(self.num_threads, self.max_links_per_query)
-            collector.run()  # Собираем ссылки
+            run_collect_links(self.num_threads, self.max_links_per_query)  # Собираем ссылки
             run_create_result()  # Создаем финальный результат
-        except ValueError:
-            self.logger.error("Некорректное число потоков или количества ссылок")
-            print("Некорректное число потоков или количества ссылок. Попробуйте снова.")
         except Exception as e:
             log_exception(self.logger, "Ошибка в режиме одного файла", e)
             print(f"Произошла ошибка: {str(e)}")
