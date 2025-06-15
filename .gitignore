@@ -156,6 +156,7 @@ dmypy.json
 cython_debug/
 
 project_folder/
+project_folder_top/
 results_folder/
 logs/
 result.txt
