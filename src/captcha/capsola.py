@@ -6,8 +6,8 @@ import requests
 from dotenv import load_dotenv
 import os
 
-from core.logger import get_logger, log_exception
-from core.config import CAPSOLA_API_URL, CAPSOLA_API_RESULT_DELAY
+from src.core.logger import get_logger, log_exception
+from src.core.config import CAPSOLA_API_URL, CAPSOLA_API_RESULT_DELAY
 
 
 @dataclass

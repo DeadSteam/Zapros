@@ -1,112 +1,136 @@
 import re
-
+import requests
+from typing import List, Dict, Any
 from selenium.webdriver import Chrome
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, WebDriverException
-from webdriver_manager.chrome import ChromeDriverManager
 
 from src.core.logger import get_logger, log_exception
 from src.core.config import METRIKA_TIMEOUT
+from src.core.webdriver_manager import WebDriverManager
 
 
-class YandexMetrikaChecker:
-    """Класс для проверки наличия Яндекс Метрики на сайтах из выдачи."""
+class BatchYandexMetrikaChecker:
+    """
+    Оптимизированный класс для проверки Яндекс Метрики на нескольких сайтах
+    с переиспользованием одного WebDriver.
+    """
     
     def __init__(self, timeout: int = METRIKA_TIMEOUT):
         """
-        Инициализирует проверщик Яндекс Метрики.
+        Инициализирует batch-проверщик Яндекс Метрики.
         
         Args:
             timeout: Таймаут для загрузки страницы в секундах
         """
         self.timeout = timeout
-        self.logger = get_logger('metrika_checker')
+        self.logger = get_logger('batch_metrika_checker')
+        self.driver = None
         
         # Паттерны для поиска Яндекс Метрики в коде страницы
         self.metrika_patterns = [
-            r'function\s*\(\s*m\s*,\s*e\s*,\s*t\s*,\s*r\s*,\s*i\s*,\s*k\s*,\s*a\s*\)',  # Современный паттерн инициализации
-            r'https:\/\/mc\.yandex\.ru\/metrika\/tag\.js'  # Новый URL скрипта метрики
+            r'function\s*\(\s*m\s*,\s*e\s*,\s*t\s*,\s*r\s*,\s*i\s*,\s*k\s*,\s*a\s*\)',
+            r'https:\/\/mc\.yandex\.ru\/metrika\/tag\.js',
         ]
 
-    def create_driver(self) -> Chrome:
-        """
-        Создает и настраивает экземпляр WebDriver.
-        
-        Returns:
-            Настроенный экземпляр Chrome WebDriver
-        """
+    def __enter__(self):
+        """Контекстный менеджер - создание драйвера."""
         try:
-            chrome_options = Options()
-            chrome_options.add_argument("--headless")
-            chrome_options.add_argument("--disable-gpu")
-            chrome_options.add_argument("--no-sandbox")
-            chrome_options.add_argument("--disable-dev-shm-usage")
-            chrome_options.add_argument("--disable-extensions")
-            chrome_options.add_argument("--disable-popup-blocking")
-            chrome_options.add_argument("--disable-notifications")
-            chrome_options.add_argument("--disable-web-security")
-            chrome_options.add_argument("--disable-infobars")
-            chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-            chrome_options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36")
-            
-            # Установка таймаутов
-            chrome_options.add_experimental_option("prefs", {
-                "profile.default_content_settings.popups": 0,
-            })
-            
-            service = Service(ChromeDriverManager().install())
-            driver = Chrome(service=service, options=chrome_options)
-            driver.set_page_load_timeout(self.timeout)
-            
-            self.logger.info("WebDriver успешно создан")
-            return driver
+            self.driver = WebDriverManager.get_chrome_driver(headless=True, timeout=self.timeout)
+            self.logger.info("BatchYandexMetrikaChecker: WebDriver создан через WebDriverManager")
+            return self
         except Exception as e:
-            log_exception(self.logger, "Ошибка при создании WebDriver", e)
+            log_exception(self.logger, "Ошибка при создании BatchYandexMetrikaChecker", e)
             raise
 
-    def check_site(self, url: str) -> bool:
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """Контекстный менеджер - закрытие драйвера."""
+        if self.driver:
+            try:
+                self.driver.quit()
+                self.logger.info("BatchYandexMetrikaChecker: WebDriver закрыт")
+            except Exception as e:
+                log_exception(self.logger, "Ошибка при закрытии WebDriver", e)
+
+    def check_sites_batch(self, urls: List[str]) -> Dict[str, bool]:
         """
-        Проверяет наличие Яндекс Метрики на указанном сайте.
+        Проверяет наличие Яндекс Метрики на нескольких сайтах.
         
         Args:
-            url: URL сайта для проверки
+            urls: Список URL для проверки
             
         Returns:
-            True, если найдена Яндекс Метрика, иначе False
+            Словарь {url: has_metrika}
         """
-        driver = None
+        results = {}
         
+        for url in urls:
+            try:
+                # Сначала быстрая проверка через requests
+                if self._quick_check_via_requests(url):
+                    results[url] = True
+                    self.logger.info(f"✅ Яндекс Метрика найдена через быструю проверку на {url}")
+                    continue
+                
+                # Затем проверка через переиспользуемый WebDriver
+                has_metrika = self._check_via_shared_webdriver(url)
+                results[url] = has_metrika
+                
+                status = "найдена" if has_metrika else "не найдена"
+                self.logger.info(f"Яндекс Метрика {status} на {url}")
+                
+            except Exception as e:
+                log_exception(self.logger, f"Ошибка при проверке {url}", e)
+                results[url] = False
+        
+        return results
+
+    def _quick_check_via_requests(self, url: str) -> bool:
+        """Быстрая проверка метрики через HTTP запрос."""
         try:
-            self.logger.info(f"Проверка сайта: {url}")
-            
             # Добавляем протокол, если его нет
             if not url.startswith(('http://', 'https://')):
                 url = 'https://' + url
+                
+            response = requests.get(url, timeout=5, headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
+            })
             
-            driver = self.create_driver()
-            driver.get(url)
+            if response.status_code == 200:
+                page_content = response.text
+                return self._check_metrika_in_source(page_content)
+            
+        except Exception:
+            pass
+        
+        return False
+
+    def _check_via_shared_webdriver(self, url: str) -> bool:
+        """Проверка через переиспользуемый WebDriver."""
+        if not self.driver:
+            return False
+            
+        try:
+            # Добавляем протокол, если его нет
+            if not url.startswith(('http://', 'https://')):
+                url = 'https://' + url
+                
+            self.driver.get(url)
             
             # Ждем загрузки страницы
-            WebDriverWait(driver, self.timeout).until(
+            WebDriverWait(self.driver, self.timeout).until(
                 EC.presence_of_element_located((By.TAG_NAME, "body"))
             )
             
-            # Получаем исходный код страницы
-            page_source = driver.page_source
-            
-            # Проверяем наличие Яндекс Метрики в коде страницы
+            # Проверяем в исходном коде
+            page_source = self.driver.page_source
             has_metrika = self._check_metrika_in_source(page_source)
             
             # Если не нашли в исходном коде, проверяем через JavaScript
             if not has_metrika:
-                has_metrika = self._check_metrika_via_js(driver)
-            
-            status = "найдена" if has_metrika else "не найдена"
-            self.logger.info(f"Яндекс Метрика {status} на {url}")
+                has_metrika = self._check_metrika_via_js()
             
             return has_metrika
             
@@ -114,47 +138,29 @@ class YandexMetrikaChecker:
             self.logger.warning(f"Таймаут при загрузке страницы {url}")
             return False
         except WebDriverException as e:
-            log_exception(self.logger, f"Ошибка WebDriver при проверке {url}", e)
+            self.logger.warning(f"WebDriver ошибка при проверке {url}: {e}")
+            # При ошибке WebDriver пробуем пересоздать драйвер
+            try:
+                if self.driver:
+                    self.driver.quit()
+                self.driver = WebDriverManager.get_chrome_driver(headless=True, timeout=self.timeout)
+            except Exception:
+                pass
             return False
         except Exception as e:
             log_exception(self.logger, f"Ошибка при проверке {url}", e)
             return False
-        finally:
-            if driver:
-                try:
-                    driver.quit()
-                except Exception as e:
-                    log_exception(self.logger, "Ошибка при закрытии WebDriver", e)
 
     def _check_metrika_in_source(self, page_source: str) -> bool:
-        """
-        Проверяет наличие Яндекс Метрики в исходном коде страницы.
-        
-        Args:
-            page_source: Исходный код страницы
-            
-        Returns:
-            True, если найдена Яндекс Метрика, иначе False
-        """
+        """Проверяет наличие Яндекс Метрики в исходном коде страницы."""
         for pattern in self.metrika_patterns:
-            matches = re.search(pattern, page_source)
-            if matches:
+            if re.search(pattern, page_source):
                 return True
-        
         return False
 
-    def _check_metrika_via_js(self, driver: Chrome) -> bool:
-        """
-        Проверяет наличие Яндекс Метрики через JavaScript.
-        
-        Args:
-            driver: Экземпляр WebDriver
-            
-        Returns:
-            True, если найдена Яндекс Метрика, иначе False
-        """
+    def _check_metrika_via_js(self) -> bool:
+        """Проверяет наличие Яндекс Метрики через JavaScript."""
         try:
-            # Проверка через глобальные объекты Яндекс Метрики
             check_scripts = [
                 "return window.Ya && window.Ya.Metrika ? true : false;",
                 "return window.Ya && window.Ya.Metrika2 ? true : false;",
@@ -164,7 +170,7 @@ class YandexMetrikaChecker:
             
             for script in check_scripts:
                 try:
-                    result = driver.execute_script(script)
+                    result = self.driver.execute_script(script)
                     if result:
                         return True
                 except Exception:
@@ -173,4 +179,4 @@ class YandexMetrikaChecker:
             return False
         except Exception as e:
             log_exception(self.logger, "Ошибка при проверке Яндекс Метрики через JavaScript", e)
-            return False 
+            return False

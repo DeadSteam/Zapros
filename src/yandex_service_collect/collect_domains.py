@@ -1,16 +1,14 @@
 from typing import Set, Optional
 from selenium import webdriver
-from selenium.webdriver.firefox.service import Service
-from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
-from webdriver_manager.firefox import GeckoDriverManager
 import tldextract
 import time
 
 from src.core.paths import paths
 from src.core.logger import get_logger, log_exception
 from src.core.config import ALWAYS_INCLUDE_DOMAINS, DOMAIN_LOAD_DELAY, YANDEX_ALL_URL
+from src.core.webdriver_manager import WebDriverManager
 
 
 class DomainExtractor:
@@ -22,16 +20,11 @@ class DomainExtractor:
         self.unique_domains: Set[str] = set(ALWAYS_INCLUDE_DOMAINS)
 
     def init_driver(self) -> None:
-        """Инициализирует веб-драйвер Firefox."""
+        """Инициализирует веб-драйвер через WebDriverManager."""
         try:
-            options = Options()
-            options.add_argument('--disable-gpu')
-            options.add_argument('--no-sandbox')
-            options.add_argument('--headless')
-            
-            service = Service(GeckoDriverManager().install())
-            self.driver = webdriver.Firefox(service=service, options=options)
-            self.logger.info("Веб-драйвер успешно инициализирован")
+            # Используем headless режим для сбора доменов
+            self.driver = WebDriverManager.get_firefox_driver(headless=True)
+            self.logger.info("Веб-драйвер успешно инициализирован через WebDriverManager")
         except Exception as e:
             log_exception(self.logger, "Ошибка при инициализации драйвера", e)
             raise

@@ -25,6 +25,7 @@ def get_env(key: str, default: Any) -> Any:
 
 # Общие настройки
 DEFAULT_TIMEOUT = get_env('DEFAULT_TIMEOUT', 10)  # Стандартное время ожидания для WebDriverWait
+REQUEST_TIMEOUT = get_env('REQUEST_TIMEOUT', 30)  # Таймаут для HTTP-запросов
 
 # Настройки для поиска ссылок
 SEARCH_MAX_ATTEMPTS = get_env('SEARCH_MAX_ATTEMPTS', 3)  # Максимальное количество попыток поиска

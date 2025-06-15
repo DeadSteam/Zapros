@@ -6,12 +6,25 @@ class PathManager:
     def __init__(self):
         self.BASE_DIR = Path(__file__).resolve().parent.parent.parent
         self.LOGS_DIR = self.BASE_DIR / "logs"
+
         self.PROJECT_DIR = self.BASE_DIR / "project_folder"
+        self.PROJECT_DIR_TOP = self.BASE_DIR/ "project_folder_top"
+
         self.RESULTS_DIR = self.BASE_DIR / "results_folder"
+
         self.DOMAINS_FILE = self.RESULTS_DIR / "domains.txt"
+
         self.KEYWORDS_FILE = self.RESULTS_DIR / 'keywords.txt'
+        self.KEYWORDS_TOP_FILE = self.RESULTS_DIR / "keywords_top.txt"
+
         self.PARSED_LINKS_FILE = self.RESULTS_DIR / "parsed_links.txt"
+        self.PARSED_LINKS_TOP_FILE = self.RESULTS_DIR / "parsed_links_top.txt"
+
         self.RESULT_FILE = self.BASE_DIR / "result.txt"
+        self.RESULT_TOP_FILE = self.BASE_DIR / "result_top.txt"
+
+        # Пути для сбора топ-запросов
+        self.BUKVARIX_ARCHIVE_DIR = self.PROJECT_DIR_TOP / "bukvarix_temp"
 
     def create_dirs(self) -> None:
         """Создает необходимые директории."""

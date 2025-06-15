@@ -120,10 +120,3 @@ def get_yandex_links(driver: WebDriver, query: str, domain: str, max_links: int 
     except Exception as e:
         log_exception(logger, f"Ошибка при получении ссылок для запроса '{query}' и домена '{domain}'", e)
         return []
-
-
-# Для совместимости со старым кодом
-def get_first_yandex_link(driver: WebDriver, query: str, domain: str) -> Optional[str]:
-    """Получает первую ссылку из результатов поиска Яндекс."""
-    links = get_yandex_links(driver, query, domain, 1)
-    return links[0] if links else None

@@ -101,40 +101,86 @@ class FileProcessor:
             return ProcessingResult(success=False, message=f"Error: {str(e)}", error=e)
 
 
-def run_create_result() -> ProcessingResult:
-    """Запускает обработку файлов."""
+def run_create_result(mode: str = "regular") -> ProcessingResult:
+    """
+    Запускает обработку файлов.
+    
+    Args:
+        mode: Режим работы:
+            - "regular" - обычный режим (parsed_links.txt → result.txt)
+            - "top" - топ-режим (parsed_links_top.txt → result_top.txt)
+    """
     try:
         logger = get_logger('create_result_runner')
-        logger.info("Запуск обработки результатов")
-        processor = FileProcessor(paths.PARSED_LINKS_FILE, paths.RESULT_FILE)
-        result = processor.process()
-        if result.success:
-            logger.info("Обработка результатов успешно завершена")
+        
+        if mode == "top":
+            input_file = paths.PARSED_LINKS_TOP_FILE
+            output_file = paths.RESULT_TOP_FILE
+            logger.info("Запуск обработки результатов в ТОП-режиме")
+        elif mode == "regular":
+            input_file = paths.PARSED_LINKS_FILE
+            output_file = paths.RESULT_FILE
+            logger.info("Запуск обработки результатов в обычном режиме")
         else:
-            logger.warning(f"Обработка результатов завершена с ошибкой: {result.message}")
+            raise ValueError(f"Неизвестный режим: {mode}. Используйте 'regular' или 'top'")
+        
+        logger.info(f"Входной файл: {input_file}")
+        logger.info(f"Выходной файл: {output_file}")
+        
+        processor = FileProcessor(input_file, output_file)
+        result = processor.process()
+        
+        if result.success:
+            logger.info(f"Обработка результатов в режиме '{mode}' успешно завершена")
+        else:
+            logger.warning(f"Обработка результатов в режиме '{mode}' завершена с ошибкой: {result.message}")
+        
         return result
+        
     except Exception as e:
         logger = get_logger('create_result_runner')
-        log_exception(logger, "Непредвиденная ошибка при запуске обработки результатов", e)
+        log_exception(logger, f"Непредвиденная ошибка при запуске обработки результатов в режиме '{mode}'", e)
         return ProcessingResult(success=False, message=f"Error: {str(e)}", error=e)
 
 
 if __name__ == "__main__":
     try:
         logger = get_logger('create_result')
-        if len(sys.argv) != 3:
-            logger.error("Использование: python create_result.py <input_file> <output_file>")
+        
+        # Проверяем аргументы
+        if len(sys.argv) == 1:
+            # Без аргументов - используем режим по умолчанию
+            logger.info("Запуск в режиме по умолчанию (regular)")
+            result = run_create_result("regular")
+            sys.exit(0 if result.success else 1)
+        elif len(sys.argv) == 2:
+            # Один аргумент - режим работы
+            mode = sys.argv[1].lower()
+            if mode in ["regular", "top"]:
+                logger.info(f"Запуск в режиме: {mode}")
+                result = run_create_result(mode)
+                sys.exit(0 if result.success else 1)
+            else:
+                logger.error("Использование: python create_result.py [regular|top] или python create_result.py <input_file> <output_file>")
+                sys.exit(1)
+        elif len(sys.argv) == 3:
+            # Два аргумента - старый режим с указанием файлов
+            input_file = sys.argv[1]
+            output_file = sys.argv[2]
+
+            logger.info(f"Начало обработки: вход={input_file}, выход={output_file}")
+            processor = FileProcessor(input_file, output_file)
+            lines = processor.read_lines()
+            cleaned_lines = processor.clean_lines(lines)
+            processor.write_lines(cleaned_lines)
+            logger.info(f"Обработка завершена: {len(cleaned_lines)}/{len(lines)} записей сохранено")
+        else:
+            logger.error("Использование:")
+            logger.error("  python create_result.py                    # режим по умолчанию")
+            logger.error("  python create_result.py [regular|top]      # указанный режим")
+            logger.error("  python create_result.py <input> <output>   # произвольные файлы")
             sys.exit(1)
-
-        input_file = sys.argv[1]
-        output_file = sys.argv[2]
-
-        logger.info(f"Начало обработки: вход={input_file}, выход={output_file}")
-        processor = FileProcessor(input_file, output_file)
-        lines = processor.read_lines()
-        cleaned_lines = processor.clean_lines(lines)
-        processor.write_lines(cleaned_lines)
-        logger.info(f"Обработка завершена: {len(cleaned_lines)}/{len(lines)} записей сохранено")
+            
     except Exception as e:
         log_exception(logger, "Ошибка при выполнении create_result.py", e)
         sys.exit(1)
